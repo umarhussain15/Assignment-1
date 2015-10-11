@@ -1,0 +1,387 @@
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Urdu;
+    src: url(../UrdType.ttf);
+}
+body {
+    font-family: 'Urdu', serif;
+}
+html,
+body {
+    margin: 0;
+    height: 100%;
+     border-style: solid;
+    border-width: 8px;
+    
+   
+	  -moz-border-image: -moz-linear-gradient(top left, #3acfd5 0%,#ff9300 10%,#c2f62e 20%,#ff4814 30%, #3a4ed5 40%,#f2f217 100%);
+	  -webkit-border-image: -webkit-linear-gradient(top left, #3acfd5 0%,#ff9300 10%,#c2f62e 20%,#ff4814 30%, #3a4ed5 40%,#f2f217 100%);
+	  border-image: linear-gradient(to bottom right, #3acfd5 0%,#ff9300 10%,#c2f62e 20%,#ff4814 30%, #3a4ed5 40%,#f2f217 100%);
+
+	  border-image-slice: 1;
+     
+}
+* {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+.header {
+    text-align: center;
+}
+.headline {
+    color: forestgreen;
+    font-size: 80px;
+    text-align: center;
+}
+.navigation {
+    height: 100%;
+}
+.quiz-image {
+    height: 250px;
+    width: 250px;
+}
+label {
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+.triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 100px solid red;
+    border-bottom: 50px solid transparent;
+}
+input {
+    display: none;
+}
+input:checked + .row,
+input:checked + .row + #inner-row {
+    display: block;
+}
+
+label[for="alphaw-"]:active h4 {
+    background-color: red;
+    display: block;
+    color:white;
+    text-align: center;
+   /* woohoo! */
+}
+label[for*="alpha-"]:active h4 {
+    background-color: cyan;
+    display: block;
+    text-align: center;
+   /* woohoo! */
+}
+.triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 100px solid red;
+    border-bottom: 50px solid transparent;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    /*    display: table-column;*/
+    display: table-cell;
+    vertical-align: middle;
+}
+.qmoon {
+    padding-left: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 15px 15px 0 0 blue;
+}
+.qoval {
+    margin-top: 75px;
+    width: 200px;
+    height: 100px;
+    background: #a84909;
+    border-radius: 50%;
+}
+h4{
+display: none;
+    position: relative;
+    margin-top: -75px;
+    font-size: 25px;
+    z-index: 1;
+}
+.qcircle {
+    width: 226px;
+    height: 226px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: burlywood;
+    -moz-border-radius: 113px;
+    -webkit-border-radius: 113px;
+    border-radius: 113px;
+}
+.qrectangle {
+    margin-top: 75px;
+    width: 200px;
+    height: 100px;
+    background: blue;
+}
+.qtriangle {
+    margin-top: 60px;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 150px solid;
+    border-bottom-color: chartreuse;
+}
+.qstar {
+   
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid;
+    border-bottom-color: darkgoldenrod;
+    position: relative;
+}
+.qstar:after {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 200px solid;
+    border-top-color: darkgoldenrod;
+    position: absolute;
+    content: "";
+    top: 65px;
+    left: -100px;
+}
+.qsemi-circle {
+    margin-top: 50px;
+    height: 125px;
+    width: 250px;
+    border-radius: 250px 250px 0 0;
+    -moz-border-radius: 250px 250px 0 0;
+    -webkit-border-radius: 250px 250px 0 0;
+    background-color: cornflowerblue;
+}
+.qmagnifying-glass {
+    
+    margin-top: 40px;
+    font-size: 20em;
+    /* This controls the size. */
+    display: inline-block;
+    width: 0.4em;
+    height: 0.4em;
+    border: 0.05em solid black;
+    background-color: azure;
+    position: relative;
+    border-radius: 0.35em;
+}
+.qmagnifying-glass::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: -0.25em;
+    bottom: -0.1em;
+    border-width: 0;
+    background: black;
+    width: 0.30em;
+    height: 0.08em;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.qdiamond {
+    width: 0;
+    height: 0;
+    margin-left: 20px;
+    border: 100px solid transparent;
+    border-bottom: 110px solid;
+    border-bottom-color: dodgerblue;
+    position: relative;
+    top: -60px;
+}
+.qdiamond:after {
+    content: '';
+    position: absolute;
+    left: -100px;
+    top: 110px;
+    width: 0;
+    height: 0;
+    border: 100px solid transparent;
+    border-top: 110px solid;
+    border-top-color: dodgerblue;
+}
+.qhexagon {
+    width: 200px;
+    height: 110px;
+    background-color: #c9ff00;
+    margin-top: 75px;
+    margin-left: 20px;
+    position: relative;
+}
+.qhexagon:before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 50px solid #c9ff00;
+}
+.qhexagon:after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 50px solid #c9ff00;
+}
+.qline {
+    width: 250px;
+    height: 250px;
+    margin-top: 50px;
+    margin-left: 75px;
+    position: relative;
+}
+.qline:after {
+    content: "";
+    position: absolute;
+    border-top: 3px solid black;
+    width: 200px;
+    transform: rotate(45deg);
+    transform-origin: 0% 0%;
+}
+.qrainbow {
+    position: relative;
+    width: 250px;
+    height: 125px;
+    overflow: hidden;
+    transform: scale(2);
+    margin-left: 75px;
+    margin-top: -25px;
+}
+.qrainbow:after {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    left: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px #4200AB, 0 0 0 10px #000095, 0 0 0 15px #00ABFF, 0 0 0 20px #00C800, 0 0 0 25px #FFF800, 0 0 0 30px #FF7642, 0 0 0 35px #E40000;
+}
+.button {
+    font-size: 50px;
+    text-decoration: none;
+    background-color: crimson;
+    color: white;
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+    width: 300px;
+    /*    border-radius: 20%;*/
+}
+.hvr-skew-forward {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+}
+.hvr-skew-forward:hover {
+    -webkit-transform: skew(-10deg);
+    transform: skew(-10deg);
+}
+.col-3 {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+.col-3:hover,
+.col-3:focus,
+.col-3:active {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+#inner-row{
+display:none;
+}
+.row {
+    display: none;
+    margin-top: -20px;
+}
+.row:after {
+    content: "";
+    clear: both;
+    display: table-row;
+}
+.col-1 {
+    width: 8.33%;
+}
+.col-2 {
+    width: 16.66%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.33%;
+}
+.col-5 {
+    width: 41.66%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-7 {
+    width: 58.33%;
+}
+.col-8 {
+    width: 66.66%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-10 {
+    width: 83.33%;
+}
+.col-11 {
+    width: 91.66%;
+}
+.col-12 {
+    width: 100%;
+}
